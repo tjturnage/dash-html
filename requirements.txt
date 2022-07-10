@@ -1,0 +1,65 @@
+attrs==21.4.0
+backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
+backports.functools-lru-cache @ file:///home/conda/feedstock_root/build_artifacts/backports.functools_lru_cache_1618230623929/work
+Brotli==1.0.9
+certifi==2021.5.30
+chardet==3.0.4
+click==6.7
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1655412516417/work
+Cython==0.28.2
+dash==2.5.1
+dash-bootstrap-components==1.2.0
+dash-core-components==2.0.0
+dash-html-components==2.0.0
+dash-renderer==0.12.1
+dash-table==5.0.0
+decorator @ file:///home/conda/feedstock_root/build_artifacts/decorator_1641555617451/work
+entrypoints @ file:///home/conda/feedstock_root/build_artifacts/entrypoints_1643888246732/work
+Flask==1.0.4
+Flask-Compress==1.12
+idna==2.6
+importlib-metadata==4.8.3
+ipykernel @ file:///D:/bld/ipykernel_1620913140366/work/dist/ipykernel-5.5.5-py3-none-any.whl
+ipython @ file:///D:/bld/ipython_1609697945785/work
+ipython-genutils==0.2.0
+itsdangerous==2.0.1
+jedi @ file:///D:/bld/jedi_1605054785407/work
+Jinja2==3.0.3
+jsonschema==3.2.0
+jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1642858610849/work
+jupyter-core==4.9.2
+lxml==4.9.1
+MarkupSafe==2.0.1
+nbformat==4.4.0
+nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1648959695634/work
+numpy==1.19.5
+pandas==1.1.5
+pandas-datareader==0.6.0
+parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1595548966091/work
+patsy==0.5.2
+pickleshare @ file:///home/conda/feedstock_root/build_artifacts/pickleshare_1602536217715/work
+plotly==5.9.0
+plotly-express==0.4.1
+prompt-toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1656332401605/work
+Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1650904496387/work
+pyrsistent==0.18.0
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+pytz==2018.4
+pywin32==304
+pyzmq @ file:///D:/bld/pyzmq_1631793604214/work
+requests==2.18.4
+requests-file==1.5.1
+requests-ftp==0.3.1
+scipy==1.5.4
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+statsmodels==0.12.2
+tenacity==8.0.1
+tornado @ file:///D:/bld/tornado_1610094881553/work
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1631041982274/work
+typing_extensions==4.1.1
+urllib3==1.22
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
+Werkzeug==0.14.1
+wincertstore==0.2
+wrapt==1.14.1
+zipp==3.6.0
