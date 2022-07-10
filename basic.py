@@ -117,8 +117,28 @@ def update_figure(selected_year):
                 hovermode='closest',
                 title=f'GRR Max T Departures from Normal for {selected_year}'
             )}
-            
+             
+"""
+@app.callback(Output('graph', 'figure'),
+              [Input('year-picker', 'value')])
+def update_figure(selected_year):
+    
+    filtered_df = df[df.index.year == selected_year]
+    trace = [go.Violin(filtered_df, y="MaxT",
+            x="month",
+            name=f'Daily temps for {selected_year}'
+            )]
 
+    return {
+        'data':trace,
+        'layout': go.Layout(
+                xaxis={'title':'Month'},
+                #yaxis={'title':'MaxT'},
+                hovermode='closest',
+                title=f'GRR Max T Departures from Normal for {selected_year}'
+            )}
+            
+"""
 
 if __name__ == '__main__':
     app.run_server()
