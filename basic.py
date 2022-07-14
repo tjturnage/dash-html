@@ -84,7 +84,7 @@ app.layout = html.Div([
             [dcc.Graph(id='graph')]
                 ),
         html.Div([
-            html.Label('Select Year')],style={'font-weight': 'bold'}
+            html.Label('Select Year')],style={'width': '80%', 'text-align': 'center', 'font-weight': 'bold'}
             ),
         html.Div([
             html.Br(),
@@ -93,13 +93,13 @@ app.layout = html.Div([
                 html.Div(id='slider-output-container')
             ]
             ,
-            style={'padding': '20px'}
+            style={'width': '80%', 'text-align': 'center', 'padding': '20px'}
             ),
 
         html.Div(
             [
         html.Div([
-            html.Label('Select Station')],style={'font-weight': 'bold'}
+            html.Label('Select Station')],style={'width': '40%', 'text-align': 'left', 'font-weight': 'bold'}
             ),
                 html.Br(),
                 dcc.RadioItems(id="station-picker",
@@ -112,7 +112,7 @@ app.layout = html.Div([
                             ),
             ]
             ,
-            style={'padding': '20px', 'width': '40%', 'display':'inline-block'}
+            style={'padding': '20px', 'width': '30%', 'text-align': 'left', 'display':'inline-block'}
             ),
             
         html.Div(
@@ -128,10 +128,10 @@ app.layout = html.Div([
                 {'label': 'Min Temp', 'value': 'MinT_d'},
                 {'label': 'Average Temp', 'value': 'AvgT_d'},
                 ],
-                value= 'Max Temp'),  
+                value= 'MaxT_d'),  
             ]
             ,
-            style={'padding': '2px 20px', 'width': '40%', 'display':'inline-block'}
+            style={'padding': '20px', 'width': '30%', 'text-align': 'left', 'display':'inline-block'}
             ),
         ])
 
