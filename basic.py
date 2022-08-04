@@ -7,8 +7,7 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 from urllib.request import urlopen
-import json
-import json, requests
+import requests
 #from XAcis_class import XAcis
 
 
