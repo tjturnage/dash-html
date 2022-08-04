@@ -90,7 +90,7 @@ master_list = get_master_list()
 """
 
 product_options, wfo_options = specific_products_directories()
-#afd_options = specific_products_directories('AFD')
+
 df = create_dataframe()
 
 app.layout = dbc.Container([
@@ -98,26 +98,26 @@ app.layout = dbc.Container([
             html.Div([
                 dbc.Row(
             [
-                html.H2(children='Download products'),
+                html.H2(children='Enter Search List'),
             ],
             align="center"
         ),
             dbc.Row(
             [
-                dbc.Col(html.H3('Download Current Year?'), md=6),
-                dbc.Col(html.H3('Remove Empty Products?'), md=6),
+                dbc.Col(html.H3('Word Search Method'), md=6),
+                dbc.Col(html.H3('Search Selection Method'), md=6),
             ],
             align="center"
         ),
                 dbc.Row(
             [
-                dbc.Col(dcc.RadioItems(id='get-latest',options=['Yes','No'],value='Yes'), md=6),
-                dbc.Col(dcc.RadioItems(id='remove-empty',options=['Yes','No'],value='Yes'), md=6),
+                dbc.Col(dcc.RadioItems(id='word-search',options=['All words','Any words'],value='Any words'), md=6),
+                dbc.Col(dcc.RadioItems(id='selection-search',options=['By Forecast','By Day'],value='By Forecast'), md=6),
             ],
             align="center"
         ),
             html.Div(
-            [   html.H2(children="Select Range of Years to Download"),
+            [   html.H2(children="Select Range of Years to Search"),
                 dcc.RangeSlider(min=1996,max=endyear,step=None,marks=build_range_slider(),value=['2000','2015'],allowCross=False),
             ],
         )], style={'border-color':'blue'}
