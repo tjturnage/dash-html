@@ -70,24 +70,7 @@ def specific_products_directories():
     return product_options, wfo_options
 
 master_list = get_master_list()
-"""
-       1. Download_Data :: Boolean value True (Download Data)
-                                         False (Do Not Download)
 
-       2. Get_Latest_Year :: Boolean value True (Download Latest Year)
-                                           False (Do Not Download)
-       3. Remove_Empty :: Boolean value True (Remove Empty Forecast Products)
-                                        False (Keep All Products)
-
-       4. start_year :: integer value for year between 1996 and Present
-                        * Ignored if Get_Latest_Year is True
-
-       5. end_year :: integer value for stop year between 1996 and Present
-
-       6. MASTER_LIST ::  a list of forecast products as strings or
-                                select from the preset search options
-
-"""
 
 product_options, wfo_options = specific_products_directories()
 
@@ -95,11 +78,12 @@ df = create_dataframe()
 
 app.layout = dbc.Container([
 
-            html.Div([
-                dbc.Row(
-            [
-                html.H2(children='Enter Search List'),
-            ],
+            html.Div(
+                dcc.Textarea(
+                    id='word-list',
+                    value='Enter List Here',
+                    style={'width': '100%', 'height': 300},
+                ),
             align="center"
         ),
             dbc.Row(
@@ -122,26 +106,24 @@ app.layout = dbc.Container([
             ],
         )], style={'border-color':'blue'}
             ),
-                dbc.Row(
+            dbc.Row(
             [
                 dbc.Col(html.H2('Select Product and Station to be Plotted Below'), md=12),
             ],
             align="center"
         ),
-                dbc.Row(
+            dbc.Row(
             [
                 dbc.Col(dcc.RadioItems(id='product-picker',options=product_options,value='AFD'), md=4),
                 dbc.Col(dcc.RadioItems(id='wfo-picker',options=wfo_options,value='GRR'), md=4),
             ],
             align="center"
         ),
-                        html.Div(
+            html.Div(
             [dcc.Graph(id='trend')]
             ),
-            ])
     
     
-
 @app.callback(Output('trend', 'figure'),
               [Input('product-picker', 'value'),
               Input('wfo-picker', 'value')

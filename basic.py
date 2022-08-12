@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 from urllib.request import urlopen
 import requests
-#from XAcis_class import XAcis
+
 
 
 month_dict = {1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',
@@ -23,7 +23,7 @@ month_list = ['January','February','March','April','May','June','July',
 
 base_url = "http://data.rcc-acis.org/StnData?params="
 stations = ["kgrr"]
-outdir = "C:/data/scripts/dash/"
+#outdir = "C:/data/scripts/dash/"
 # RCC ACIS url for the API. 
 
 
