@@ -15,11 +15,11 @@ from components import navbar
 nav = navbar.Navbar()
 
 # Define the index page layout
-app.layout = html.Div([
-    dcc.Location(id='url', refresh=False),
-    nav, 
-    html.Div(id='page-content', children=[]), 
-])
+#app.layout = html.Div([
+#    dcc.Location(id='url', refresh=False),
+#    nav, 
+#    html.Div(id='page-content', children=[]), 
+#])
 
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
