@@ -9,11 +9,12 @@ def Navbar():
     layout = html.Div([
         dbc.NavbarSimple(
             children=[
-                dbc.NavItem(dbc.NavLink("Page 1", href="/page1")),
-                dbc.NavItem(dbc.NavLink("Page 2", href="/page2")),
+                dbc.NavItem(dbc.NavLink("turnageweather", href="/home")),
+                dbc.NavItem(dbc.NavLink("SPC graphics download", href="/spcdownload")),
+                dbc.NavItem(dbc.NavLink("AFDs", href="/afds")),
             ] ,
-            brand="Multipage Dash App",
-            brand_href="/page1",
+            brand="turnageweather",
+            brand_href="/home",
             color="dark",
             dark=True,
         ), 
